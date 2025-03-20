@@ -27,4 +27,9 @@ class Pesanan extends Model
     {
         return $this->belongsTo(StatusPembayaran::class);
     }
+
+    public function detailPesanan()
+    {
+        return $this->hasMany(DetailPesanan::class);
+    }
 }
