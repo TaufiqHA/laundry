@@ -102,7 +102,7 @@ class PesananResource extends Resource
                         'menunggu' => 'gray',
                         'diproses' => 'warning',
                         'diambil' => 'success',
-                        'selesai' => 'blue',
+                        'selesai' => 'info',
                     }),
                 Tables\Columns\TextColumn::make('status_pembayaran.nama')
                     ->label('Status Pembayaran')
