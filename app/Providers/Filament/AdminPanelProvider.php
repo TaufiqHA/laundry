@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Resources\LayananResource;
+use App\Filament\Resources\PesananResource;
 use App\Filament\Resources\StatusPembayaranResource;
 use App\Filament\Resources\StatusPesananResource;
 use Filament\Pages;
@@ -37,6 +38,7 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->brandName('Laundry')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
@@ -55,8 +57,12 @@ class AdminPanelProvider extends PanelProvider
                         ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.pages.dashboard'))
                         ->url(fn (): string => Dashboard::getUrl()),
                 ])
-                ->groups([
+                ->groups(groups: [
                     NavigationGroup::make('Manajemen Pesanan')
+                    ->items([
+                        ...PesananResource::getNavigationItems(),
+                    ]),
+                    NavigationGroup::make('Manajemen Status')
                     ->items([
                         ...StatusPesananResource::getNavigationItems(),
                         ...StatusPembayaranResource::getNavigationItems(),
