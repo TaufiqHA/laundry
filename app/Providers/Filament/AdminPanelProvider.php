@@ -4,6 +4,9 @@ namespace App\Providers\Filament;
 
 use App\Filament\Resources\LayananResource;
 use App\Filament\Resources\PesananResource;
+use App\Filament\Resources\PesananResource\Widgets\PesananBulananStat;
+use App\Filament\Resources\PesananResource\Widgets\PesananMingguanStat;
+use App\Filament\Resources\PesananResource\Widgets\PesananStat;
 use App\Filament\Resources\StatusPembayaranResource;
 use App\Filament\Resources\StatusPesananResource;
 use Filament\Pages;
@@ -46,8 +49,9 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                PesananStat::class,
+                PesananMingguanStat::class,
+                PesananBulananStat::class,
             ])
             ->spa()
             ->navigation(function (NavigationBuilder $builder): NavigationBuilder {
