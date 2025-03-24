@@ -57,7 +57,7 @@
           href="#services"
           class="btn btn-md bg-teal-500 text-white rounded-full"
         >
-          Book Now
+          Get Start
         </a>
       </div>
     </div>
@@ -79,7 +79,7 @@
           <a href="#services"
             class="btn btn-lg w-xs mx-auto lg:mx-0 font-semibold bg-teal-500 rounded-full text-white mt-5"
           >
-            Book Now
+            Get Started
           </a>
         </div>
         <div class="hidden lg:block">
@@ -145,51 +145,42 @@
         >
           <div class="card w-full bg-base-100 shadow-md">
             <div class="card-body">
-              <span class="badge badge-xs badge-warning">Most Popular</span>
-              <div class="flex justify-between">
+              <div class="flex flex-col justify-between">
+                <img src="/icon/cloth.png" alt="cloth" class="w-10 h-10">
                 <h2 class="text-xl font-bold">Wash & Fold</h2>
-                <span class="text-lg">From $2.50/lb</span>
               </div>
-              <p>Regular laundry service with perfect folding</p>
-              <div class="mt-6">
-                <button class="btn bg-teal-400 btn-block">Booking</button>
-              </div>
+              <p class="text-md">Regular laundry service with perfect folding</p>
+              <span class="text-lg text-teal-400">From $2.50/lb</span>
             </div>
           </div>
           <div class="card w-full bg-base-100 shadow-md">
             <div class="card-body">
-              <div class="flex justify-between">
+              <div class="flex flex-col justify-between">
+                <img src="/icon/suit.png" alt="suit" class="w-10 h-10">
                 <h2 class="text-xl font-bold">Dry Cleaning</h2>
-                <span class="text-lg">From $6/item</span>
               </div>
-              <p>Professional care for delicate graments</p>
-              <div class="mt-6">
-                <button class="btn bg-teal-400 btn-block">Booking</button>
-              </div>
+              <p class="text-md">Professional care for delicate graments</p>
+              <span class="text-lg text-teal-400">From $6/item</span>
             </div>
           </div>
           <div class="card w-full bg-base-100 shadow-md">
             <div class="card-body">
-              <div class="flex justify-between">
+              <div class="flex flex-col justify-between">
+                <img src="/icon/sofa.png" alt="sofa" class="w-10 h-10">
                 <h2 class="text-xl font-bold">Home Textiles</h2>
-                <span class="text-lg">From $15/item</span>
               </div>
-              <p>Cleaning for curtains, rugs and more</p>
-              <div class="mt-6">
-                <button class="btn bg-teal-400 btn-block">Booking</button>
-              </div>
+              <p class="text-md">Cleaning for curtains, rugs and more</p>
+              <span class="text-lg text-teal-400">From $15/item</span>
             </div>
           </div>
           <div class="card w-full bg-base-100 shadow-md">
             <div class="card-body">
-              <div class="flex justify-between">
+              <div class="flex flex-col justify-between">
+                <img src="/icon/iron.png" alt="iron" class="w-10 h-10">
                 <h2 class="text-xl font-bold">Ironing</h2>
-                <span class="text-lg">From $3/item</span>
               </div>
-              <p>Professional pressing services</p>
-              <div class="mt-6">
-                <button class="btn bg-teal-400 btn-block">Booking</button>
-              </div>
+              <p class="text-md">Professional pressing services</p>
+              <span class="text-lg text-teal-400">From $3/item</span>
             </div>
           </div>
         </div>
@@ -301,33 +292,7 @@
         <!-- body start -->
         <div class="flex flex-col lg:flex-row gap-5 lg:justify-center mt-5">
           <div>
-            <fieldset
-              class="fieldset mx-auto w-xs lg:w-2xl bg-gray-100 border border-base-300 p-4 lg:p-7 rounded-box"
-            >
-              <label class="fieldset-label lg:text-lg">Name</label>
-              <input
-                type="text"
-                class="input lg:w-full rounded-md mb-2"
-                placeholder="Name"
-              />
-
-              <label class="fieldset-label lg:text-lg">Eamil</label>
-              <input
-                type="email"
-                class="input lg:w-full rounded-md mb-2"
-                placeholder="Eamil"
-              />
-
-              <label class="fieldset-label lg:text-lg">Message</label>
-              <textarea
-                class="textarea lg:w-full rounded-md"
-                placeholder="Message"
-              ></textarea>
-
-              <button class="btn bg-teal-400 text-white mt-4">
-                Send Message
-              </button>
-            </fieldset>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15892.989031357874!2d119.4527532975553!3d-5.223801632125597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee18f4c822aa1%3A0xded508134be68f0b!2sLaundry%20Fadil!5e0!3m2!1sid!2sid!4v1742847904157!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
           </div>
           <div>
             <fieldset
@@ -413,7 +378,7 @@
           Experiense the freshness of perfecly cleaned clothes with our premium
           laundry service
         </p>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        <p>Copyright © 2025 - All right reserved</p>
       </aside>
       <nav>
         <div class="grid grid-flow-col gap-4">
