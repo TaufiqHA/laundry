@@ -2,20 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 class Pesanan extends Model
 {
     protected $guarded = ['id'];
 
-    protected static function boot() {
-        parent::boot();
-        static::creating(function($model) {
-            if (!$model->kode_pesanan) {
-                $model->kode_pesanan = (string) Str::uuid();
-            }
-        });
+    public function detailPesanan()
+    {
+        return $this->hasMany(DetailPesanan::class);
     }
 
     public function status_pesanan()
@@ -26,10 +21,5 @@ class Pesanan extends Model
     public function status_pembayaran()
     {
         return $this->belongsTo(StatusPembayaran::class);
-    }
-
-    public function detailPesanan()
-    {
-        return $this->hasMany(DetailPesanan::class);
     }
 }
